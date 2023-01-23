@@ -53,12 +53,6 @@ objectives:
             - <+20%
       weight: 1
       key_sli: false
-    - sli: throughput_(request_count)
-      displayName: Throughput (Request Count)
-      pass: []
-      warning: []
-      weight: 1
-      key_sli: true
     - sli: error_count
       displayName: Error Count
       pass:
@@ -115,6 +109,16 @@ objectives:
             - <+20%
       weight: 1
       key_sli: false
+    - sli: throughput_(request_count)
+      displayName: Throughput (Request Count)
+      pass:
+        - criteria:
+            - '>=1000.000000'
+      warning:
+        - criteria:
+            - '>=500.000000'
+      weight: 1
+      key_sli: true
 total_score:
     pass: 85%
     warning: 80%
