@@ -6,3 +6,10 @@ spec:
   stages:
     - name: "quality-gate"
       test_strategy: "performance"
+      sequences:
+        - name: "delivery"
+          tasks:
+            - name: "deployment"
+            - name: "test"
+            - name: "evaluation"
+            - name: "release"
