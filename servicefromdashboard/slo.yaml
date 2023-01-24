@@ -6,8 +6,8 @@ comparison:
     number_of_comparison_results: 3
     aggregate_function: avg
 objectives:
-    - sli: booking_response_time_(p95)
-      displayName: Booking Response time (P95)
+    - sli: response_time_(p95)
+      displayName: Response time (P95)
       pass:
         - criteria:
             - '>=0.000000'
@@ -18,8 +18,8 @@ objectives:
             - <2000.000000
       weight: 2
       key_sli: true
-    - sli: booking_response_time_(p90)
-      displayName: Booking Response time (P90)
+    - sli: response_time_(p90)
+      displayName: Response time (P90)
       pass:
         - criteria:
             - '>=0.000000'
@@ -30,8 +30,8 @@ objectives:
             - <800.000000
       weight: 2
       key_sli: true
-    - sli: booking_response_time_(p50)
-      displayName: Booking Response time (P50)
+    - sli: response_time_(p50)
+      displayName: Response time (P50)
       pass:
         - criteria:
             - '>=0.000000'
