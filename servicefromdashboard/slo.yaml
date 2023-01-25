@@ -91,7 +91,7 @@ objectives:
       displayName: IO time
       pass:
         - criteria:
-            - <250000
+            - <25000
             - <=+10%
       warning:
         - criteria:
