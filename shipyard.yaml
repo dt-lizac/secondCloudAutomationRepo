@@ -5,3 +5,4 @@ metadata:
 spec:
   stages:
     - name: "quality-gate"
+    - name: "production"
